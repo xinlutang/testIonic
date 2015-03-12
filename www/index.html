@@ -68,22 +68,24 @@
 				alert(url);
 				cordovaHTTP.useBasicAuth("admin", "Demo@123", function() {
 					console.log('success1!');
+    				alert('success1!');
 				}, function() {
 					console.log('error :(');
+    				alert('error :(');
 				});
 
-				//	alert("tp2");
+				alert("tp2");
 				cordovaHTTP.setHeader("Header", "Value", function() {
 					console.log('success2!');
-					//	alert("tp2-1");
+			alert("tp2-1");
 
 				}, function() {
 					console.log('error :(');
-					//	alert("tp2-2");
+			alert("tp2-2");
 
 				});
 
-				//	alert("tp3");
+			alert("tp3");
 				cordovaHTTP.enableSSLPinning(true, function() {
 					console.log('SSLPinning success!');
 					alert('SSLPinning success!');
@@ -93,10 +95,10 @@
 					alert('error!');
 
 				});
-				//alert("tp4");
+			alert("tp4");
 				cordovaHTTP.acceptAllCerts(true, function() {
 					console.log('success4!');
-					//	alert('success4!');
+			alert('success4!');
 				}, function() {
 					console.log('error :(');
 					alert('error :(');
