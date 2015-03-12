@@ -6,7 +6,7 @@
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
 //angular.module('starter', ['ionic', 'starter.services', 'starter.controllers', 'ngRoute', 'ngAnimate', 'cordovaHTTP']);
-angular.module('starter', ['ionic', 'starter.services', 'starter.controllers', 'cordovaHTTP']);
+angular.module('starter', ['ionic', 'starter.services', 'starter.controllers']);
 
 .config(function($stateProvider, $urlRouterProvider) {
 
